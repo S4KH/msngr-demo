@@ -1,0 +1,7 @@
+applications:
+  - name: msngr
+    command: NODE_ENV=production node server-simple
+    buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+    disk_quota: 256MB
+    memory: 128MB
+    instances: 2
